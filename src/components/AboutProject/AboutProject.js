@@ -27,7 +27,7 @@ function AboutProject() {
         </p>
       </div>
     </section>
-  )
+  );
 }
 
 export default AboutProject;

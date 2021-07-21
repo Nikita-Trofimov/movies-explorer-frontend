@@ -52,7 +52,6 @@
   transition: opacity ease-in .2s;
 }
 
-
 .portfolio__link:hover {
   opacity: .6;
   cursor: pointer;

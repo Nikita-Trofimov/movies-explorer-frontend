@@ -1,6 +1,6 @@
-import photo from "../../images/618592738.png"
+import photo from "../../images/618592738.png";
 
-import "./AboutMe.css"
+import "./AboutMe.css";
 
 function AboutMe() {
   return (

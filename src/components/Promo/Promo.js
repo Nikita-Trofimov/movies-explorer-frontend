@@ -1,5 +1,4 @@
 import './Promo.css';
-// import backgound from '../../images/text__COLOR_landing-logo.svg'
 
 function Promo() {
   return (

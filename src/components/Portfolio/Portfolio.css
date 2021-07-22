@@ -63,13 +63,12 @@
   }
 
   .portfolio__title {
-     padding-bottom: 50px;
+     padding-bottom: 30px;
   }
 
   .portfolio__list-item {
     font-size: 28px;
     line-height: 50px;
-    padding: 0 0 20px 0;
   }
 }
 
@@ -86,6 +85,5 @@
   .portfolio__list-item {
     font-size: 18px;
     line-height: 28px;
-    padding: 20px 0;
   }
 }

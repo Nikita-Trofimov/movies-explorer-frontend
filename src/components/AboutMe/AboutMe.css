@@ -82,3 +82,77 @@
   border-radius: 10px;
   object-fit: cover;
 }
+
+@media (max-width: 768px) {
+  .about-me {
+    padding: 90px 50px;
+  }
+
+  .about-me__subtitle {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 16px;
+  }
+
+  .about-me__prof {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .about-me__about {
+    margin: 20px 49px 87px 0;
+    max-width: 364px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .about-me__photo {
+    max-width: 255px;
+    max-height: 307px;
+  }
+}
+
+@media (max-width: 590px) {
+  .about-me {
+    padding: 70px 14px;
+  }
+
+  .about-me__title {
+    padding-bottom: 28px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .about-me__info {
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+
+  .about-me__photo {
+    max-width: 292px;
+    max-height: 352px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .about-me__subtitle {
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .about-me__prof {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .about-me__about {
+    margin: 20px 0 40px 0;
+    max-width: 292px;
+    font-size: 11px;
+    line-height: 16px;
+  }
+}

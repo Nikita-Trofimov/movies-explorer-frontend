@@ -16,9 +16,9 @@ function App() {
         <Promo />
         <AboutProject />
         <Techs />
-        {/* <AboutMe />
+        <AboutMe />
         <Portfolio />
-        <Footer /> */}
+        {/* <Footer /> */}
       </Main>
     </div>
   );

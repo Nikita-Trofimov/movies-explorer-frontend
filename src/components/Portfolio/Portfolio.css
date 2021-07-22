@@ -56,3 +56,36 @@
   opacity: .6;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 0 50px;
+  }
+
+  .portfolio__title {
+     padding-bottom: 50px;
+  }
+
+  .portfolio__list-item {
+    font-size: 28px;
+    line-height: 50px;
+    padding: 0 0 20px 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .portfolio {
+    padding: 0 14px;
+  }
+
+  .portfolio__title {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+
+  .portfolio__list-item {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 20px 0;
+  }
+}

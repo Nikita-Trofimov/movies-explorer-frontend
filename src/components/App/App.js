@@ -14,11 +14,11 @@ function App() {
       <Header />
       <Main>
         <Promo />
-        <AboutProject />
+        {/* <AboutProject />
         <Techs />
         <AboutMe />
         <Portfolio />
-        <Footer />
+        <Footer /> */}
       </Main>
     </div>
   );

@@ -5,7 +5,6 @@
 
 .portfolio__title {
   margin: 0;
-  font-family: Inter;
   font-weight: normal;
   font-size: 18px;
   line-height: 20px;
@@ -20,7 +19,6 @@
 }
 
 .portfolio__list-item {
-  font-family: Inter;
   font-weight: normal;
   font-size: 30px;
   line-height: 50px;

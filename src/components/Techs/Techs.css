@@ -6,7 +6,6 @@
 .techs__title {
   margin: 0;
   padding-bottom: 23px;
-  font-family: Inter;
   font-weight: normal;
   font-size: 22px;
   line-height: 27px;
@@ -16,7 +15,6 @@
 
 .techs__subtitle {
   margin: 90px 0 26px 0;
-  font-family: Inter;
   font-style: normal;
   font-weight: normal;
   font-size: 50px;
@@ -27,7 +25,6 @@
 
 .techs__text {
   max-width: 460px;
-  font-family: Inter;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
@@ -52,7 +49,6 @@
   padding: 21px 0;
   border-radius: 10px;
   margin-right: 10px;
-  font-family: Inter;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;

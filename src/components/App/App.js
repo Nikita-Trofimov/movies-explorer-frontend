@@ -1,4 +1,4 @@
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, useHistory } from 'react-router-dom'
 
 import './App.css';
 import Header from '../Header/Header';
@@ -11,8 +11,16 @@ import Portfolio from '../Portfolio/Portfolio';
 import Footer from '../Footer/Footer';
 import Register from '../Register/Register';
 import Login from '../Login/Login';
+import Movies from '../Movies/Movies';
 
 function App() {
+
+  const history = useHistory();
+
+  function handleSignIn() {
+    history.push("/movies");
+  }
+
   return (
     <div className="App">
     <Switch>
@@ -31,7 +39,10 @@ function App() {
         <Register/>
       </Route>
       <Route path="/signin">
-        <Login />
+        <Login onLogin={handleSignIn} />
+      </Route>
+      <Route path="/movies">
+        <Movies />
       </Route>
     </Switch>
 

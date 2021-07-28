@@ -2,11 +2,17 @@ import { Link } from 'react-router-dom';
 
 import "./Login.css";
 
-function Login() {
+function Login({ onLogin }) {
+
+  function handleLoginSubmit(evt) {
+    evt.preventDefault();
+    onLogin();
+  }
+
   return (
   <section className="login">
     <Link to='/' className="login__logo"/>
-    <form className="login__form">
+    <form className="login__form" onSubmit={handleLoginSubmit}>
       <h2 className="login__title">Рады видеть!</h2>
       <p className="login__input-name">E-mail</p>
       <input name="email" type="email" placeholder="Введите Email" className="login__input"/>

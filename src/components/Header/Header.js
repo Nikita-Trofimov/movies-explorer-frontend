@@ -4,7 +4,8 @@ import { useState } from 'react';
 import './Header.css';
 
 
-function Header() {
+function Header({ isLogin=false }) {
+  const routs = ['/movies', '/saved-movies', '/profile', '/' ];
 
   const [isClickedBurgerMenu, setIsClickedBurgerMenu] = useState(false);
 
@@ -17,8 +18,8 @@ function Header() {
   }
 
   return (
-      <Switch>
-        <Route exact path='/'>
+    <Route exact path={routs}>
+      { !isLogin ?
         <header className="header">
           <Link to='/' className="header__logo"/>
           <nav className="header__authentication">
@@ -26,8 +27,7 @@ function Header() {
             <Link to='/signin' className="header__authentication-link header__authentication-button">Войти</Link>
           </nav>
         </header>
-        </Route>
-        <Route path='/movies'>
+        :
         <header className="header header__color_FA">
           <nav className="header__movies">
           <div className="header__movies-container">
@@ -51,8 +51,8 @@ function Header() {
                       <Link to='/saved-movies' onClick={handleCloseBurgerMenu} className="header__burger-menu-link">Сохранённые фильмы</Link>
                     </div>
                     <div className="header__burger-menu-account">
-                      <Link to='/profile' className="header__authentication-link header__movies-link">Аккаунт</Link>
-                      <Link to='/profile' className="header__movies-account-icon"></Link>
+                      <Link to='/profile' onClick={handleCloseBurgerMenu} className="header__authentication-link header__movies-link">Аккаунт</Link>
+                      <Link to='/profile' onClick={handleCloseBurgerMenu} className="header__movies-account-icon"></Link>
                     </div>
                     <button onClick={handleCloseBurgerMenu} className="header__burger-menu-close">&#x2716;</button>
                   </div>
@@ -62,8 +62,9 @@ function Header() {
           </nav>
 
         </header>
-         </Route>
-      </Switch>
+      }
+    </Route>
+
 
   );
 }

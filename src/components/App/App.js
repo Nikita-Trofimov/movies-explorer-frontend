@@ -12,18 +12,23 @@ import Footer from '../Footer/Footer';
 import Register from '../Register/Register';
 import Login from '../Login/Login';
 import Movies from '../Movies/Movies';
+import SavedMovies from '../SavedMovies/SavedMovies';
+import Profile from '../Profile/Profile';
+import { useState } from 'react';
 
 function App() {
 
   const history = useHistory();
+  const [isLogin, setIsLogin] = useState(false);
 
   function handleSignIn() {
     history.push("/movies");
+    setIsLogin(true);
   }
 
   return (
     <div className="App">
-    <Header />
+    <Header isLogin={isLogin} />
     <Switch>
       <Route exact path="/" >
         <Main>
@@ -33,7 +38,6 @@ function App() {
           <AboutMe />
           <Portfolio />
         </Main>
-      <Footer />
       </Route>
       <Route path="/signup">
         <Register/>
@@ -43,9 +47,15 @@ function App() {
       </Route>
       <Route path="/movies">
         <Movies />
-        <Footer />
+      </Route>
+      <Route path="/saved-movies">
+        <SavedMovies />
+      </Route>
+      <Route path="/profile">
+        <Profile />
       </Route>
     </Switch>
+    <Footer />
     </div>
   );
 }

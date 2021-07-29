@@ -3,17 +3,17 @@ import "./MoviesCardList.css";
 
 import { movies } from '../../utils/movies-data';
 
-function MoviesCardList() {
+function MoviesCardList({isSavedMovie}) {
 
   return (
     <>
-      <ul  className="movies-cards-list">
+      <ul className="movies-cards-list">
         {movies.map(movie => { return (
-            <MoviesCard src={movie.img} title={movie.title}/>
+            <MoviesCard src={movie.img} title={movie.title} isSavedMovie={isSavedMovie}/>
           );
         })}
       </ul>
-      <button className="movies__more">Ещё</button>
+      {isSavedMovie ? '' : <button className="movies__more">Ещё</button>}
     </>
   );
 }

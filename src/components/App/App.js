@@ -46,12 +46,8 @@ function App() {
         <Footer />
       </Route>
     </Switch>
-
     </div>
   );
 }
-
-
-
 
 export default App;

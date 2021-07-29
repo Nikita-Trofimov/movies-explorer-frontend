@@ -6,14 +6,14 @@ import './Header.css';
 
 function Header() {
 
-  const [isClickedBurgerMenu, setisClickedBurgerMenu] = useState(false);
+  const [isClickedBurgerMenu, setIsClickedBurgerMenu] = useState(false);
 
   function handleOpenBurgerMenu() {
-    setisClickedBurgerMenu(true);
+    setIsClickedBurgerMenu(true);
   }
 
   function handleCloseBurgerMenu() {
-    setisClickedBurgerMenu(false);
+    setIsClickedBurgerMenu(false);
   }
 
   return (

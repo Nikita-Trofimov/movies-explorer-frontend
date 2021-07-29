@@ -1,5 +1,17 @@
 .movies {
   max-width: 1280px;
-  padding: 0 70px 20px 70px;
+  padding: 0 70px;
   background-color: #FAFAFA;
+}
+
+@media (max-width: 768px) {
+  .movies {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 440px) {
+  .movies {
+    padding: 0 10px;
+  }
 }

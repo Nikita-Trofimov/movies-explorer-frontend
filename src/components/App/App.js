@@ -1,4 +1,5 @@
-import { Route, Switch, useHistory } from 'react-router-dom'
+import { Route, Switch, useHistory, Redirect } from 'react-router-dom'
+import { useState } from 'react';
 
 import './App.css';
 import Header from '../Header/Header';
@@ -14,7 +15,7 @@ import Login from '../Login/Login';
 import Movies from '../Movies/Movies';
 import SavedMovies from '../SavedMovies/SavedMovies';
 import Profile from '../Profile/Profile';
-import { useState } from 'react';
+import NotFound from '../NotFound/NotFound';
 
 function App() {
 
@@ -53,6 +54,12 @@ function App() {
       </Route>
       <Route path="/profile">
         <Profile />
+      </Route>
+      <Route path="/404">
+        <NotFound />
+      </Route>
+      <Route path="*">
+        <Redirect to="/404" />
       </Route>
     </Switch>
     <Footer />

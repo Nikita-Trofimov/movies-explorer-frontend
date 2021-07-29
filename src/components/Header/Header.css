@@ -77,16 +77,16 @@
   background: url('../../images/acc-img.svg') no-repeat center;
   width: 11.5px;
   height: 14px;
+  transition: opacity ease-in .2s;
+}
+
+.header__movies-account-icon:hover {
+  opacity: .6;
+  cursor: pointer;
 }
 
 .header__movies-link {
   margin-right: 16px;
-}
-
-.header__movies-account {
-  background: url('../../images/acc-img.svg') no-repeat center;
-  width: 11.5px;
-  height: 14px;
 }
 
 .header__burger-menu-button {

@@ -37,7 +37,7 @@ function Header() {
           </div>
           <div className="header__movies-container header__movies-container_disabled">
             <Link to='/profile' className="header__authentication-link header__movies-link header__authentication-link_disabled">Аккаунт</Link>
-            <Link to='/profile' className="header__movies-account header__authentication-link_disabled"></Link>
+            <Link to='/profile' className="header__movies-account-icon header__authentication-link_disabled"></Link>
           </div>
           <button onClick={handleOpenBurgerMenu} className="header__burger-menu-button"></button>
           {

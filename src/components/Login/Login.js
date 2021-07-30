@@ -15,9 +15,9 @@ function Login({ onLogin }) {
       <form className="login__form" onSubmit={handleLoginSubmit}>
         <h2 className="login__title">Рады видеть!</h2>
         <p className="login__input-name">E-mail</p>
-        <input name="email" type="email" placeholder="Введите Email" className="login__input"/>
+        <input name="email" type="email" placeholder="Введите Email" className="login__input" required />
         <p className="login__input-name">Пароль</p>
-        <input name="password" type="password" placeholder="Пароль" className="login__input"/>
+        <input name="password" type="password" placeholder="Пароль" className="login__input" required />
         <p className="login__input-error">Что-то пошло не так...</p>
         <button type="submit" className="login__submit-button">Войти</button>
       </form>

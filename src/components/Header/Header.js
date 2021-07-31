@@ -1,4 +1,4 @@
-import { Link, Route, Switch } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 import { useState } from 'react';
 
 import './Header.css';

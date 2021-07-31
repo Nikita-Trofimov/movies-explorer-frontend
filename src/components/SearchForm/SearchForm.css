@@ -101,9 +101,3 @@
   line-height: 18px;
   margin-left: 12px;
 }
-
-@media (max-width: 440px) {
-  .search-form__query {
-    max-width: 212px;
-  }
-}

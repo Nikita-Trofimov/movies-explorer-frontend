@@ -54,7 +54,7 @@ function Header({ isLogin=false }) {
                       <Link to='/profile' onClick={handleCloseBurgerMenu} className="header__authentication-link header__movies-link">Аккаунт</Link>
                       <Link to='/profile' onClick={handleCloseBurgerMenu} className="header__movies-account-icon"></Link>
                     </div>
-                    <button onClick={handleCloseBurgerMenu} className="header__burger-menu-close">&#x2716;</button>
+                    <button onClick={handleCloseBurgerMenu} className="header__burger-menu-close"></button>
                   </div>
                 </>
                 : ''

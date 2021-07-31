@@ -135,8 +135,10 @@
   top: 22.4px;
   right: 22.4px;
   border: 0;
-  font-size: 22px;
+  width: 22px;
+  height: 22px;
   background-color: #FAFAFA;
+  background-image: url('../../images/unsave.svg') no-repeat center;
   transition: opacity 0.2s ease;
 }
 

@@ -73,7 +73,7 @@ class MainApi {
     return fetch(`${this._baseUrl}/signin`, {
       method: 'POST',
       headers: this._headers,
-      credentials: 'include',
+      // credentials: 'include',
       body: JSON.stringify({
         "password": password,
         "email": email

@@ -27,7 +27,7 @@
 
 
 .header__authentication-link {
-  font-weight: 500;
+  font-weight: normal;
   font-size: 12px;
   line-height: 16px;
   text-decoration: none;
@@ -36,8 +36,8 @@
   margin-right: 29px;
 }
 
-.header__authentication-link_inactive {
-  font-weight: normal;
+.header__authentication-link_active {
+  font-weight: 500;
 }
 
 .header__authentication-button {

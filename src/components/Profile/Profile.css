@@ -52,6 +52,13 @@
   background-color: #FAFAFA;
 }
 
+.profile__input-error {
+  color: red;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+}
+
 .profile__label:last-of-type {
    border: none;
 }
@@ -85,13 +92,38 @@
   background-color: #FAFAFA;
 }
 
+.profile__submit-button:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+.profile__submit-button_disabled {
+  color: gray;
+  transition: none;
+}
+
+.profile__submit-button_disabled:hover {
+  opacity: 1;
+  cursor: auto;
+}
+
 .profile__submit-button_red {
   color: red;
 }
 
-.profile__submit-button:hover {
-  opacity: .8;
-  cursor: pointer;
+.profile__submit-error{
+  color: red;
+  font-weight: normal;
+  text-align: center;
+  font-size: 14px;
+  line-height: 12px;
+}
+
+.profile__submit-succes{
+  color: #3456F3;
+  font-weight: normal;
+  text-align: center;
+  font-size: 14px;
+  line-height: 12px;
 }
 
 .profile__subtitle {

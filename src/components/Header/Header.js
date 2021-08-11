@@ -1,8 +1,7 @@
-import { Link, Route } from 'react-router-dom';
+import { Link, NavLink, Route } from 'react-router-dom';
 import { useState } from 'react';
 
 import './Header.css';
-
 
 function Header({ isLogin=false }) {
   const routs = ['/movies', '/saved-movies', '/profile', '/' ];
@@ -32,8 +31,10 @@ function Header({ isLogin=false }) {
           <nav className="header__movies">
           <div className="header__movies-container">
             <Link to='/' className="header__logo header__movies-logo"/>
-            <Link to='/movies' className="header__authentication-link header__movies-link header__authentication-link_disabled">Фильмы</Link>
-            <Link to='/saved-movies' className="header__authentication-link header__authentication-link_inactive header__authentication-link_disabled">Сохраненые фильмы</Link>
+            <NavLink to='/movies' activeClassName="header__authentication-link_active"
+            className="header__authentication-link header__movies-link header__authentication-link_disabled">Фильмы</NavLink>
+            <NavLink to='/saved-movies' activeClassName="header__authentication-link_active"
+             className="header__authentication-link header__authentication-link_disabled">Сохраненые фильмы</NavLink>
           </div>
           <div className="header__movies-container header__movies-container_disabled">
             <Link to='/profile' className="header__authentication-link header__movies-link header__authentication-link_disabled">Аккаунт</Link>
@@ -64,8 +65,6 @@ function Header({ isLogin=false }) {
         </header>
       }
     </Route>
-
-
   );
 }
 

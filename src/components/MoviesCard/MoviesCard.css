@@ -7,7 +7,8 @@
 
 .card__image {
   width: 100%;
-  min-height: 151px;
+  height: 151px;
+  object-fit: cover;
 }
 
 .card__title {

@@ -101,3 +101,17 @@
   line-height: 18px;
   margin-left: 12px;
 }
+
+.search-form__error {
+  display: none;
+  color: red;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 12px;
+  margin-left: 10px;
+  padding: 0;
+}
+
+.search-form__error_visible {
+  display: inline;
+}

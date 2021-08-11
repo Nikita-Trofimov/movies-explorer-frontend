@@ -1,5 +1,5 @@
-# Верстка дипломного проекта
+# Фронтенд дипломного проекта Яндекс.Практикум
 
 
-[Ссылка на верстку](https://nikita-movie-explorer.nomoredomains.club/)  
+[Ссылка на проект](https://nikita-movie-explorer.nomoredomains.club/)  
 IP - 178.154.207.151

@@ -73,7 +73,7 @@ class MainApi {
     return fetch(`${this._baseUrl}/signin`, {
       method: 'POST',
       headers: this._headers,
-      // credentials: 'include',
+      credentials: 'include',
       body: JSON.stringify({
         "password": password,
         "email": email
@@ -113,6 +113,7 @@ class MainApi {
 export const mainApi = new MainApi({
   baseUrl: api,
   headers: {
-    'Content-Type': 'application/json'
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
   }
 });

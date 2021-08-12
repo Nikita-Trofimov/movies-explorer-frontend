@@ -26,6 +26,15 @@
   cursor: pointer;
 }
 
+.nothing-found {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+}
+
 @media (max-width: 1270px) {
   .movies-cards-list {
     grid-template-columns: repeat(3, minmax(min-content, max-content));

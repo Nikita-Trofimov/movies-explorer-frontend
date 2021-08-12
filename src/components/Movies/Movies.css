@@ -5,6 +5,16 @@
   background-color: #FAFAFA;
 }
 
+.search-error {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 10px;
+  max-width: 800px;
+}
+
 @media (max-width: 768px) {
   .movies {
     padding: 0 30px;
